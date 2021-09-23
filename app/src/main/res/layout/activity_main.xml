@@ -6,13 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/picturePick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="获取当前所有图片"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picturePick" />
+
+    <Button
+        android:id="@+id/pictureToAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向相册插入一张图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saf" />
+
+    <Button
+        android:id="@+id/downLoadFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载文件"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pictureToAlbum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
